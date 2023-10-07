@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+img {
+    height: 300px;
+    width: 600px;
+    border: 5px solid white;
+    
+}
+.contain {
+    
+    margin: 100px 100px 150px 500px;
+}
+h1 {
+    color: white;
+    margin-left: 100px;
+    width: 600px;
+}
+p {
+    color: white;
+    margin-left: 100px;
+}
