@@ -5,6 +5,9 @@ h1 , h2 {
 .box > p {
     color: firebrick;
 }
-.box ul li {
-    color: rebeccapurple;
+.box li {
+    color: blue;
+}
+li.done {
+    color: green;
 }
