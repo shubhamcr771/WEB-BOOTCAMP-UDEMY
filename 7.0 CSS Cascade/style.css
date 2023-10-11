@@ -1,11 +1,15 @@
 /* Don't change the existing CSS. */
 
-.box {
-  margin-top: 30px;
+
+#outer-box {
+  margin-top: 100px;
   margin-left: 60px;
   margin-right: 100px;
   background-color: blue;
   padding: 10px;
+}
+.box {
+  
 }
 
 p {
