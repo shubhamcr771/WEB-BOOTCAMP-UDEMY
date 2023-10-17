@@ -3,6 +3,11 @@
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
+.gradient-background-1 {
+  background: linear-gradient(200deg, #b4ecb4, #a9d3a9, #f4b6f0);
+  background-size: 180% 180%;
+  animation: gradient-animation 13s step-end;
+}
 
 @keyframes gradient-animation {
   0% {
