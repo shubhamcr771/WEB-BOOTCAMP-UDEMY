@@ -3,5 +3,7 @@ h1 {
 }
 
 .big {
-  font-size: xx-large;
+  font-size: 600px;
+  color: blue;
+  font-weight: bolder;
 }
