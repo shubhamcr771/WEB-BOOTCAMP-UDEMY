@@ -9,6 +9,8 @@ document
 
 function result() {
   var selected = document.querySelector("h1");
+  
+  
   if (randomNumber1 === randomNumber2) {
     selected.innerHTML = "Draw!";
   } else if (randomNumber1 > randomNumber2) {
