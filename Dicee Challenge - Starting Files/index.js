@@ -3,3 +3,4 @@ function diceroll() {
     document.getElementsByClassName("img1").setAttribute('src', 'dice' + randomNumber1 + '.png');
     document.getElementsByClassName("img2").setAttribute('src', 'dice' + randomNumber1 + '.png');
 }
+diceroll();
