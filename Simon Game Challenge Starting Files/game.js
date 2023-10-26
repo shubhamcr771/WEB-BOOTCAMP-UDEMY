@@ -10,60 +10,59 @@ $("#blue").fadeOut(50).fadeIn(50).fadeOut(50).fadeIn(50);
 $("#red").fadeOut(50).fadeIn(50).fadeOut(50).fadeIn(50);
 $("#green").fadeOut(50).fadeIn(50).fadeOut(50).fadeIn(50);
 $("#yellow").fadeOut(50).fadeIn(50).fadeOut(50).fadeIn(50);
- 
-$(document).ready(function() {
-    // Get the button by its class
-    var $button = $('#red');
-    
-    // Create an Audio object and load the sound file
-    var audio = new Audio('./sounds/red.mp3');
 
-    // Attach a click event handler to the button
-    $button.on('click', function() {
-        // Play the audio when the button is clicked
-        audio.play();
-    });
+$(document).ready(function () {
+  // Get the button by its class
+  var $button = $("#red");
+
+  // Create an Audio object and load the sound file
+  var audio = new Audio("./sounds/red.mp3");
+
+  // Attach a click event handler to the button
+  $button.on("click", function () {
+    // Play the audio when the button is clicked
+    audio.play();
+  });
 });
 
-$(document).ready(function() {
-    // Get the button by its class
-    var $button = $('#blue');
-    
-    // Create an Audio object and load the sound file
-    var audio = new Audio('./sounds/blue.mp3');
+$(document).ready(function () {
+  // Get the button by its class
+  var $button = $("#blue");
 
-    // Attach a click event handler to the button
-    $button.on('click', function() {
-        // Play the audio when the button is clicked
-        audio.play();
-    });
+  // Create an Audio object and load the sound file
+  var audio = new Audio("./sounds/blue.mp3");
+
+  // Attach a click event handler to the button
+  $button.on("click", function () {
+    // Play the audio when the button is clicked
+    audio.play();
+  });
 });
 
-$(document).ready(function() {
-    // Get the button by its class
-    var $button = $('#green');
-    
-    // Create an Audio object and load the sound file
-    var audio = new Audio('./sounds/green.mp3');
+$(document).ready(function () {
+  // Get the button by its class
+  var $button = $("#green");
 
-    // Attach a click event handler to the button
-    $button.on('click', function() {
-        // Play the audio when the button is clicked
-        audio.play();
-    });
+  // Create an Audio object and load the sound file
+  var audio = new Audio("./sounds/green.mp3");
+
+  // Attach a click event handler to the button
+  $button.on("click", function () {
+    // Play the audio when the button is clicked
+    audio.play();
+  });
 });
 
+$(document).ready(function () {
+  // Get the button by its class
+  var $button = $("#yellow");
 
-$(document).ready(function() {
-    // Get the button by its class
-    var $button = $('#yellow');
-    
-    // Create an Audio object and load the sound file
-    var audio = new Audio('./sounds/yellow.mp3');
+  // Create an Audio object and load the sound file
+  var audio = new Audio("./sounds/yellow.mp3");
 
-    // Attach a click event handler to the button
-    $button.on('click', function() {
-        // Play the audio when the button is clicked
-        audio.play();
-    });
+  // Attach a click event handler to the button
+  $button.on("click", function () {
+    // Play the audio when the button is clicked
+    audio.play();
+  });
 });
