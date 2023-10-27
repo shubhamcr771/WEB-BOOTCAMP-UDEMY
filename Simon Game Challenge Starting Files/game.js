@@ -8,6 +8,7 @@ $(".btn").click(function () {
   // This function will be triggered when any of the buttons are clicked
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
+  alert(userChosenColour);
 
 });
 
@@ -18,9 +19,11 @@ function nextSequence() {
 
   $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
 
-  var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
-  audio.play();
+  
   
 }
-nextSequence();
 
+function playSound(name) {
+  var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
+  audio.play();
+}
