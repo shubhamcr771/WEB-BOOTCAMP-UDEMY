@@ -5,9 +5,9 @@ function nextSequence() {
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
-}
-$("#red").fadeOut(50).fadeIn(50);
-$("#blue").fadeOut(50).fadeIn(50);
-$("#green").fadeOut(50).fadeIn(50);
-$("#yellow").fadeOut(50).fadeIn(50);
 
+  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+  var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
+  audio.play();
+}
+nextSequence();
