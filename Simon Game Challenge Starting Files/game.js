@@ -12,12 +12,11 @@ function nextSequence() {
     .fadeIn(100);
   var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
   audio.play();
-  $(".btn").click(function() {
+  $(".btn").click(function () {
     // This function will be triggered when any of the buttons are clicked
     var userChosenColour = $(this).attr("id");
     alert(userChosenColour);
   });
 }
-
 
 nextSequence();
