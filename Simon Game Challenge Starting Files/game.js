@@ -1,6 +1,9 @@
 var buttonColours = ["red", "blue", "green", "yellow"];
+
 var gamePattern = [];
+
 var userClickedPattern = [];
+
 $(".btn").click(function () {
   // This function will be triggered when any of the buttons are clicked
   var userChosenColour = $(this).attr("id");
