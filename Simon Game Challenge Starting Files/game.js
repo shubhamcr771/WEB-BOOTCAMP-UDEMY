@@ -26,6 +26,9 @@ $(".btn").click(function () {
   playSound(userChosenColour);
 
   animatePress(userChosenColour);
+
+  checkAnswer(userClickedPattern.length-1);
+
   
 });
 
@@ -68,6 +71,22 @@ function animatePress(currentColour) {
   }, 100);
 }
 
+// CHECK ANSWER FUNCTION 
 
+function checkAnswer(currentLevel) {
 
+  if(gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+    
+
+    if(userClickedPattern.length === gamePattern.length){
+      setTimeout( function ()  {
+        nextSequence();
+        
+      }, 1000);
+    }
+  } else {
+    
+  }
+
+}
 
