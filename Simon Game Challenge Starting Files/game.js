@@ -13,9 +13,12 @@ function nextSequence() {
   $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
 
   var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
-  audio.play();
+    audio.play();
   
   
+  $(".btn").click(function() {
+  var userChosenColour = alert($(this).attr("id"));
+  });
 }
 nextSequence();
 
