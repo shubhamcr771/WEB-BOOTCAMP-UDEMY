@@ -85,6 +85,7 @@ function checkAnswer(currentLevel) {
 }
 
 
+
 // RESTART FUNCTION
 
 function startOver() {
