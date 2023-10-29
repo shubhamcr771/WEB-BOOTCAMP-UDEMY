@@ -7,15 +7,12 @@ var started = false;
 
 var level = 0;
 
-$(document).keypress(function() {
+$(document).keypress(function () {
   if (!started) {
-
-
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
   }
-
 });
 
 // CHOOSE THE BUTTONS ACCORDING TO CORRESPONDING ID
@@ -27,20 +24,15 @@ $(".btn").click(function () {
 
   animatePress(userChosenColour);
 
-  checkAnswer(userClickedPattern.length-1);
-
-  
+  checkAnswer(userClickedPattern.length - 1);
 });
 
-
-// NEXT SEQUENCE FUNCTION 
+// NEXT SEQUENCE FUNCTION
 
 function nextSequence() {
-
   level++;
 
   $("#level-title").text("Level " + level);
-
 
   var randomNumber = Math.floor(Math.random() * 4);
 
@@ -48,9 +40,11 @@ function nextSequence() {
 
   gamePattern.push(randomChosenColour);
 
-  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+  $("#" + randomChosenColour)
+    .fadeIn(100)
+    .fadeOut(100)
+    .fadeIn(100);
   playSound(randomChosenColour);
-  
 }
 
 // FUNCTION TO PLAY SOUND
@@ -60,8 +54,7 @@ function playSound(name) {
   audio.play();
 }
 
-
-// FUNCTION TO ANIMATE PRESSED BUTTON 
+// FUNCTION TO ANIMATE PRESSED BUTTON
 
 function animatePress(currentColour) {
   $("#" + currentColour).addClass("pressed");
@@ -71,40 +64,30 @@ function animatePress(currentColour) {
   }, 100);
 }
 
-// CHECK ANSWER FUNCTION 
+// CHECK ANSWER FUNCTION
 
 function checkAnswer(currentLevel) {
-
-  if(gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    
-
-    if(userClickedPattern.length === gamePattern.length){
-      setTimeout( function ()  {
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+    if (userClickedPattern.length === gamePattern.length) {
+      setTimeout(function () {
         nextSequence();
-        
       }, 1000);
     }
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
-    setTimeout( function() {
+    setTimeout(function () {
       $("body").removeClass("game-over");
-      
     }, 200);
     $("h1").text("Game Over, Press Any Key to Restart");
     startOver();
   }
-
 }
 
-
-// RESTART FUNCTION 
+// RESTART FUNCTION
 
 function startOver() {
-level = 0;
-started = false;
-gamePattern = [];
+  level = 0;
+  started = false;
+  gamePattern = [];
 }
-  
-
-
