@@ -19,9 +19,18 @@ inquirer
     },
   ])
   .then((answers) => {
+    // 2 qr-image INSTALL
+
     const url = answers.URL;
     var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream('qr-img.png'));
+    qr_svg.pipe(fs.createWriteStream("qr-img.png"));
+
+    // 3 creating txt file to save the user input
+
+    fs.writeFile("url.txt", url, (err) => {
+      if (err) throw err;
+      console.log("file had been saved!");
+    });
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -31,15 +40,4 @@ inquirer
     }
   });
 
-// 2 qr-image INSTALL
-
-
-
 // var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
-
-// 3 creating txt file to save the user input
-
-// fs.writeFile("url.txt", "Hello world",  (err) => {
-//     if (err) throw err;
-//     console.log("file had been saved!");
-// });
