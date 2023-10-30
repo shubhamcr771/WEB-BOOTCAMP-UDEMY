@@ -4,7 +4,7 @@
 3. Create a txt file to save the user input using the native fs node module.
 */
 
-// 1 
+// 1 inquirer INSTALL 
 
 import inquirer from 'inquirer';
 
@@ -22,3 +22,15 @@ inquirer
       // Something else went wrong
     }
   });
+
+
+
+
+// 2 qr-image INSTALL 
+
+import qr from "qr-image";
+
+var qr_svg = qr.image('I love QR!', { type: 'svg' });
+qr_svg.pipe(require('fs').createWriteStream('i_love_qr.svg'));
+ 
+var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
