@@ -25,10 +25,10 @@ inquirer
     var qr_svg = qr.image(url);
 
     // HERE I AM STORING GENERATED QR IMAGE IN qr-image folder 
-    
-    const imagePath = path.join(__dirname, 'qr-image', 'qr-img.png');
 
-    qr_svg.pipe(fs.createWriteStream(imagePath));
+    // const imagePath = path.join(__dirname, 'qr-image', 'qr-img.png');
+
+    qr_svg.pipe(fs.createWriteStream("qr-img.png"));
 
     // 3 creating txt file to save the user input
 
