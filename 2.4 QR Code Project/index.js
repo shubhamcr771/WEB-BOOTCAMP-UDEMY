@@ -4,23 +4,24 @@
 3. Create a txt file to save the user input using the native fs node module.
 */
 
-// 0 IMPORTING ALL THE PACKAGES 
-import inquirer from 'inquirer';
+// 0 IMPORTING ALL THE PACKAGES
+import inquirer from "inquirer";
 import qr from "qr-image";
 import fs from "fs";
 
-
-
-// 1 inquirer INSTALL 
-
-
+// 1 inquirer INSTALL
 
 inquirer
   .prompt([
-    /* Pass your questions in here */
+    {
+      message: "Type In Your URL:",
+      name: "URL",
+    },
   ])
   .then((answers) => {
-    // Use user feedback for... whatever!!
+    const url = answers.URL;
+    var qr_svg = qr.image(url);
+    qr_svg.pipe(fs.createWriteStream('qr-img.png'));
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -30,23 +31,15 @@ inquirer
     }
   });
 
+// 2 qr-image INSTALL
 
 
 
-// 2 qr-image INSTALL 
+// var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
 
+// 3 creating txt file to save the user input
 
-
-var qr_svg = qr.image('I love QR!', { type: 'svg' });
-qr_svg.pipe(require('fs').createWriteStream('i_love_qr.svg'));
- 
-var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
-
-
-// 3 creating txt file to save the user input 
-
-
-fs.writeFile("message.txt", "Hello world",  (err) => {
-    if (err) throw err;
-    console.log("file had been saved!");
-});
+// fs.writeFile("url.txt", "Hello world",  (err) => {
+//     if (err) throw err;
+//     console.log("file had been saved!");
+// });
