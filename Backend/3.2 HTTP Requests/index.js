@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-    res.send("<h1>I am a developer</h1>");
+    res.send("<p>I am a developer.<br> I like football.<br> I am from Bihar, India.</p>");
 });
 
 app.get("/contact", (req, res) => {
