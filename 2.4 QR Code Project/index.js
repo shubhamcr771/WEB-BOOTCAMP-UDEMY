@@ -24,9 +24,7 @@ inquirer
     const url = answers.URL;
     var qr_svg = qr.image(url);
 
-    // HERE I AM STORING GENERATED QR IMAGE IN qr-image folder 
-
-    // const imagePath = path.join(__dirname, 'qr-image', 'qr-img.png');
+    
 
     qr_svg.pipe(fs.createWriteStream("qr-img.png"));
 
