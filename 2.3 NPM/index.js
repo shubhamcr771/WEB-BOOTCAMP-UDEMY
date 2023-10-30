@@ -18,4 +18,4 @@ superheroes.all;
 superheroes.random();
 //=> 'Spider-Ham'
 
-console.log(`i am a ${superheroes.random()}`)
+console.log(`i am a ${superheroes.random()}`);
