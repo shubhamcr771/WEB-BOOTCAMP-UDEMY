@@ -10,6 +10,7 @@
   "author": "Shubham Singh",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.11"
+    "inquirer": "^9.2.11",
+    "qr-image": "^3.2.0"
   }
 }
