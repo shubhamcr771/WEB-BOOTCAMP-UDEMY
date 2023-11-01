@@ -1,0 +1,9 @@
+* {
+    background-color: darkgrey;
+}
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: beige;
+}
