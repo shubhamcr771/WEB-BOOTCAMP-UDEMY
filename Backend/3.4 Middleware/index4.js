@@ -8,12 +8,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 var bandName = " ";
-var randomNumber = Math.floor(Math.random() * 100)
+var randomNumber = Math.floor(Math.random() * 100);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 function bandNameGenerator(req, res, next) {
   console.log(req.body);
-  bandName = req.body["pet"] + " Loves You " + randomNumber + "% " + req.body["street"];
+  bandName =
+    req.body["pet"] + " Loves You " + randomNumber + "% " + req.body["street"];
   next();
 }
 
