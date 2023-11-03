@@ -5,6 +5,7 @@ const port = 1313;
 
 function logger(req, res, next) {
   console.log("This request is running on  ", req.url);
+  console.log("Request Method:", req.method);
   next();
 }
 
@@ -16,4 +17,5 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
+  
 });
