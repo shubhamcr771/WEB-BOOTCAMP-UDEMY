@@ -10,6 +10,8 @@ const app = express();
 const port = 3000;
 
 
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
@@ -17,7 +19,11 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  res.send("hello");
+
+  var city = req.body.street;
+  var petName = req.body.pet;
+  var bandName = `${city}${petName}`
+  res.send(`<h1>Your band name is:</h1><br><h2>${bandName}✌️</h2>`);
 });
 
 
