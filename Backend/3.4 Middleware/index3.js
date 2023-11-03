@@ -4,7 +4,7 @@ const app = express();
 const port = 1313;
 
 function logger(req, res, next) {
-  console.log("Request URl ", req.url);
+  console.log("This request is running on  ", req.url);
   next();
 }
 
