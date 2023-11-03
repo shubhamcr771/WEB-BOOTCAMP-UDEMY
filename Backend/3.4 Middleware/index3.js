@@ -3,6 +3,11 @@ import express from "express";
 const app = express();
 const port = 1313;
 
+function logger(req, res, next) {
+  console.log("Request URl ", req.URL);
+  next();
+}
+
 app.use(logger);
 
 app.get("/", (req, res) => {
