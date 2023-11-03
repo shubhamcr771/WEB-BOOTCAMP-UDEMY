@@ -4,13 +4,8 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-
-
 const app = express();
 const port = 3000;
-
-
-
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -25,7 +20,6 @@ app.post("/submit", (req, res) => {
   var bandName = `${city}${petName}`
   res.send(`<h1>Your band name is:</h1><br><h2>${bandName}✌️</h2>`);
 });
-
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
