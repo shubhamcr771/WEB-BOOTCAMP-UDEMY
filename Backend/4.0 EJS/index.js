@@ -15,7 +15,7 @@ function checkday(req, res, next) {
     if(d.getDay() <= 4) {
         res.render("index.ejs", {days: "weekday", work: works[1]});
 
-    } else {
+    } else if(d.getDay() > 4 || d.getDay() <= 6) {
         res.render("index.ejs", {days: "weekend", work: works[0]});
     }
 }
