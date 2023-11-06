@@ -6,9 +6,7 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  req.sendFile("Backend\4.2 Passing Data\views\index.ejs");
-});
+app.get("/", (req, res) => {});
 
 app.post("/submit", (req, res) => {});
 
