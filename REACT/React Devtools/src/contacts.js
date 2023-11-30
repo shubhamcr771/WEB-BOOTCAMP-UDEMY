@@ -11,7 +11,7 @@ const contacts = [
     id: 2,
     name: "Jack Bauer",
     imgURL:
-      "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",
+      "https://th.bing.com/th/id/OIP.YJ03q54Anx4B4fZ07hBhDwHaHa?w=195&h=195&c=7&r=0&o=5&dpr=1.1&pid=1.7",
     phone: "+987 654 321",
     email: "jack@nowhere.com"
   },
