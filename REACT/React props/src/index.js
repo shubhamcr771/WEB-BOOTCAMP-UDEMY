@@ -15,7 +15,7 @@ ReactDOM.render(
 
     <h2>Jack Bauer</h2>
     <img
-      src="https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg"
+      src="https://th.bing.com/th/id/OIP.ZtAmF1QdeGDmYGLzylTXnwHaJO?w=148&h=184&c=7&r=0&o=5&dpr=1.1&pid=1.7"
       alt="avatar_img"
     />
     <p>+987 654 321</p>
