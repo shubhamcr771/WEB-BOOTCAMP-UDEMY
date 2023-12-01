@@ -1,4 +1,6 @@
 import React from "react";
+import Entry from "./Entry";
+import emojipedia from "../emojipedia";
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       </h1>
 
       <dl className="dictionary">
+      <Entry/>
         <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
