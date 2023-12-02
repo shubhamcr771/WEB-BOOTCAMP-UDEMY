@@ -76,9 +76,7 @@
 // console.log(newNumbers);
 
 
-// CHALLANGE
-import React from "react";
-import ReactDOM from "react-dom";
+// CHALLANGE is to bring the meaning data in new array but only 100 characters!
 
 import emojipedia from "./emojipedia";
 
