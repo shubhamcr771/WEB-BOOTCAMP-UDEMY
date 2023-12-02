@@ -1,6 +1,22 @@
+
 var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
+
+// function triple(x) {
+//     return x * 3;
+// }
+// const newNumbers = numbers.map(triple);
+
+// console.log(newNumbers);
+
+const newArray = [];
+
+function double(x) {
+    return x * 2;
+}
+
+const newNumbers = numbers.forEach(double);
 
 //Filter - Create a new array by keeping the items that return true.
 
