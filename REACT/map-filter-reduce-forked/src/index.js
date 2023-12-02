@@ -88,5 +88,5 @@ var newArray = emojipedia.map(function (item) {
     return (item.meaning.slice(0, 100));
 
 })
-
+console.log(newArray);
 
