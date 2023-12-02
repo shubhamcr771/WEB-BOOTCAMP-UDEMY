@@ -77,15 +77,16 @@
 
 
 // CHALLANGE
+import React from "react";
+import ReactDOM from "react-dom";
 
 import emojipedia from "./emojipedia";
 
-var newArray = [];
 
 
-emojipedia.map(function () {
-    newArray.push(emojipedia.meaning);
+var newArray = emojipedia.map(function (item) {
+    return (item.meaning.slice(0, 100));
 
 })
 
-console.log(newArray);
+
