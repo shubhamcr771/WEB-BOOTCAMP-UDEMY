@@ -17,14 +17,39 @@
 //     });
 // console.log(newNumbers);
 
+//Filter - Create a new array by keeping the items that return true.
 
+
+
+// function numberCheck(num) {
+//     return num < 100;
+// }
+// const newNumbers = numbers.filter(numberCheck);
+
+// var newNumbers = [];
+// numbers.filter(function(num) {
+//     if(num > 10) {
+//         newNumbers.push(num)
+//     }
+
+// });
+// console.log(newNumbers);
+
+
+
+//Reduce - Accumulate a value by doing something to each item in an array.
 
 var numbers = [3, 56, 2, 48, 5];
 
+var newNumbers = [];
 
-//Filter - Create a new array by keeping the items that return true.
+numbers.reduce(function () {
 
-//Reduce - Accumulate a value by doing something to each item in an array.
+});
+
+
+
+
 
 //Find - find the first item that matches from an array.
 
