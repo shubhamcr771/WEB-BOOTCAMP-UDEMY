@@ -1,5 +1,4 @@
 
-var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
 
@@ -10,13 +9,18 @@ var numbers = [3, 56, 2, 48, 5];
 
 // console.log(newNumbers);
 
-const newArray = [];
+// var newNumbers = [];
 
-function double(x) {
-    return x * 2;
-}
+// numbers.forEach(function (x) {
 
-const newNumbers = numbers.forEach(double);
+//     newNumbers.push(x * 2);
+//     });
+// console.log(newNumbers);
+
+
+
+var numbers = [3, 56, 2, 48, 5];
+
 
 //Filter - Create a new array by keeping the items that return true.
 
