@@ -1,7 +1,7 @@
 {
   "name": "learning-npm",
   "version": "1.0.0",
-  "description": "I,m learning about nodejs from algela yu udemy course",
+  "description": "I'm Learning about the node package manager.",
   "main": "index.js",
   "type": "module",
   "scripts": {

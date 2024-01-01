@@ -1,7 +1,7 @@
 {
-  "name": "qr-code-generator",
+  "name": "learning-npm",
   "version": "1.0.0",
-  "description": "I am building this project to check my npm skills",
+  "description": "I'm Learning about the node package manager.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,6 @@
   "author": "Shubham Singh",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.11",
-    "qr-image": "^3.2.0"
+    "inquirer": "^9.2.12",
   }
 }

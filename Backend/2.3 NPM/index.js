@@ -1,21 +1,15 @@
-// var generateName = require('sillyname'); This was in CJS: common javascript
+// COMMON JAVASCRIPT
+// var generateName = require('sillyname');
+// var sillyName = generateName();
+// console.log(`My Name is ${sillyName}`);
 
-// NOW THESE CODE ARE IN EMJS WHICH USED import heyword 
 
-import generateName from "sillyname";
+// EJS
+// import generateName from "sillyname";
+// var sillyName = generateName();
+// console.log(`My Name is this ${sillyName}`);
+
+// CHALLENGE!
 import superheroes from "superheroes";
-var sillyName = generateName();
-
-console.log(`My name is ${sillyName}.`);
-
-// SUPER HEROES NAME GENERATOR PACKAGE 
-
-import random from "superheroes";
-
-superheroes.all;
-//=> ['3-D Man', 'A-Bomb', …]
- 
-superheroes.random();
-//=> 'Spider-Ham'
-
-console.log(`i am a ${superheroes.random()}`);
+var name = superheroes.random();
+console.log(`I am ${name}!`);
