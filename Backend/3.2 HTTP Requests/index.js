@@ -1,19 +1,15 @@
 import express from "express";
-const port = 1313;
 const app = express();
-
+const port = 3000;
 app.get("/", (req, res) => {
-    res.send("Hello To all who are learning node. nad ");
+  res.send("<h1>Hello</h1>");
 });
-
 app.get("/about", (req, res) => {
-    res.send("<h1>I am Shubham Singh.</h1><br><p> And i am from Bihar, India.</p>");
+    res.send("<h1>This is about page</h1>");
 });
-
 app.get("/contact", (req, res) => {
-    res.send("<em>You can call me @8989877877</em>");
-});
-
-app.listen(1313, () => {
-  console.log(`App is running on ${port}`);
+    res.send("8292769801");
+})
+app.listen(port, () => {
+  console.log(`Server is running on ${port}`);
 });
