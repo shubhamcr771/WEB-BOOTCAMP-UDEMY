@@ -5,8 +5,8 @@
 */
 
 import inquirer from "inquirer";
-import qr from "qr-image";
 import fs from "fs";
+import qr from "qr-image";
 
 inquirer
   .prompt([
@@ -19,14 +19,13 @@ inquirer
   .then((answers) => {
     // Use user feedback for... whatever!!
     const url = answers.URL;
-    const image_number = Math.floor(Math.random() * 2000);
     var qr_svg = qr.image(url);
 
-    qr_svg.pipe(fs.createWriteStream(`qr_img${image_number}.png`));
-    fs.appendFile('URL.txt', `${url}, `, (err) => {
-        if (err) throw err;
-        console.log('The file has been saved!');
-      }); 
+    qr_svg.pipe(fs.createWriteStream(`${url}.png`));
+    fs.appendFile('url.txt', `${url} , `, (err) => {
+      if (err) throw err;
+      console.log('The "data to append" was appended to file!');
+    }); 
   })
   .catch((error) => {
     if (error.isTtyError) {
