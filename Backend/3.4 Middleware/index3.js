@@ -1,18 +1,18 @@
 import express from "express";
 
 const app = express();
-const port = 1313;
-
+const port = 3000;
 function logger(req, res, next) {
-  console.log("This request is running on  ", req.url);
-  console.log("Request Method:", req.method);
+  console.log("Request method: ", req.method);
+  console.log("Rwquest URL: ", req.url);
   next();
+  
 }
-
 app.use(logger);
 
-app.get("/", (req, res) => {
-  res.send("Hello");
+
+app.get("/submit", (req, res) => {
+  res.send("Hello ji");
 });
 
 app.listen(port, () => {
