@@ -1,15 +1,7 @@
 import fs from "fs";
-var number = Math.floor(Math.random()*2000);
+const number = Math.floor(Math.random()*2000)
 
-fs.writeFile('practice.txt', " This is the list of id of Students  ,", (err) => {
+fs.appendFile('message.txt', `This is my id ${number} ,`, (err) => {
   if (err) throw err;
-  console.log('The file has been saved! hoho');
+  console.log('The "data to append" was appended to file!');
 }); 
-fs.readFile('./practice.txt', 'utf8', (err, data) => {
-  if (err) throw err;
-  console.log(data);
-}); 
-fs.appendFile('practice.txt', `this is the index ${number}`, (err) => {
-  if (err) throw err;
-  console.log('The append text is done');
-});

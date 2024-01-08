@@ -11,10 +11,7 @@ import qr from "qr-image";
 inquirer
   .prompt([
     /* Pass your questions in here */
-    {
-      message: "Type in your URL",
-      name: "URL",
-    },
+    { message: "Type in your url", name: "URL" },
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
@@ -22,10 +19,11 @@ inquirer
     var qr_svg = qr.image(url);
 
     qr_svg.pipe(fs.createWriteStream(`${url}.png`));
-    fs.appendFile('url.txt', `${url} , `, (err) => {
+    fs.appendFile('url.txt', `${url}, `, (err) => {
       if (err) throw err;
       console.log('The "data to append" was appended to file!');
     }); 
+    
   })
   .catch((error) => {
     if (error.isTtyError) {
